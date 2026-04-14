@@ -93,6 +93,7 @@ app.post("/apply", async (req, res) => {
       },
       body: JSON.stringify({
         from: `Nocturne Games <${FROM_EMAIL}>`,
+        reply_to: "arnaud@nocturne.build",
         to: [email],
         subject: "We got your application.",
         html: emailBody,
